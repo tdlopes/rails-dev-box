@@ -91,7 +91,7 @@ We are ready to go to edit in the host, and test in the virtual machine.
 
 ## RubyMine integration
 
-In order for RubyMine to access the machine without problems the vagrant machine ssh config must be added to the host ssh configs:
+In order for RubyMine to access the machine without problems the vagrant machine ssh config must be added to the host ssh configs by running the following command inside the folder where the Vagrantfile resides:
 
     vagrant ssh-config | sed 's/^Host default/Host 127.0.0.1/' >> ~/.ssh/config
 
